@@ -1,16 +1,17 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { FALLBACK_PRODUCTS, getProductBySlug } from "@/lib/api-client";
+import { getProductBySlug, getProducts } from "@/lib/api-client";
 import { ProductDetailsClient } from "@/components/products/ProductDetailsClient";
-import { Skeleton } from "@/components/ui/SkeletonLoaders";
+import { ProductDetailSkeleton } from "@/components/ui/SkeletonLoaders";
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return FALLBACK_PRODUCTS.map((product) => ({
+  const products = await getProducts({ limit: 50 });
+  return products.map((product) => ({
     slug: product.slug,
   }));
 }
@@ -93,20 +94,7 @@ async function ProductDetailsContent({
 
 export default function ProductDetailPage({ params }: ProductPageProps) {
   return (
-    <Suspense
-      fallback={
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 lg:grid-cols-12 gap-12">
-          <Skeleton className="lg:col-span-7 aspect-[4/5] w-full" />
-          <div className="lg:col-span-5 space-y-6">
-            <Skeleton className="h-6 w-32" />
-            <Skeleton className="h-10 w-3/4" />
-            <Skeleton className="h-8 w-1/3" />
-            <Skeleton className="h-24 w-full" />
-            <Skeleton className="h-14 w-full" />
-          </div>
-        </div>
-      }
-    >
+    <Suspense fallback={<ProductDetailSkeleton />}>
       <ProductDetailsContent paramsPromise={params} />
     </Suspense>
   );

@@ -33,6 +33,7 @@ import { formatNGN, cn } from "@/lib/utils";
 import type { VerifyOrderResponse } from "@/types/order";
 import type { Product } from "@/types/product";
 import type { PatronUser } from "@/types/auth";
+import { AccountSkeleton } from "@/components/ui/SkeletonLoaders";
 
 type AccountSection =
   | "personal"
@@ -400,14 +401,7 @@ export default function AccountPage() {
   };
 
   if (!initialized || !user) {
-    return (
-      <div className="min-h-[70vh] bg-[#F9F7F4] flex items-center justify-center px-4">
-        <div className="flex flex-col items-center gap-3 text-[#4A5550]">
-          <Loader2 className="w-7 h-7 animate-spin text-[#013E37]" />
-          <p className="text-sm font-medium">Loading your patron profile…</p>
-        </div>
-      </div>
-    );
+    return <AccountSkeleton />;
   }
 
   const isStaff = Boolean(user.role && user.role !== "CUSTOMER");
