@@ -1,0 +1,34 @@
+# DÁMS Footwear
+
+> Own Every Step. Purely Natural, Locally Made — 100% Original Local Product.
+
+DÁMS is an Abuja-based, family-owned Nigerian footwear manufacturing brand crafting purely natural, 100% original locally produced leather shoes, natural cork slides, derbies, penny loafers, Chelsea boots, and woven mules.
+
+## Brand Identity & Positioning
+- **Brand Name**: DÁMS Footwear
+- **Headquarters & Workshop**: Abuja (FCT), Nigeria (Wuse II / Maitama Fitting Lounge & Manufacturing Atelier)
+- **Tagline**: "Own Every Step. Purely Natural, Locally Made." / "Made Locally. Worn Everywhere."
+- **Core Promise**: 100% original local Nigerian product crafted from vegetable-tanned full-grain hides, breathable kidskin linings, and anatomical natural cork and stacked leather soles.
+- **Currency**: Nigerian Naira (NGN / ₦)
+- **Dispatch & Delivery**: 24-hour delivery within Abuja (FCT); 2–4 business days nationwide across all 36 Nigerian states. Complimentary nationwide shipping on orders of ₦150,000 and above.
+- **Fit Guarantee**: Complimentary 14-day size exchange on unworn pairs within Nigeria.
+
+## Key Storefront Pages
+- [Home](https://damsfootwear.ng/): Brand showcase, hero product (`/images/hero.png`), Best Sellers spotlight, and Abuja craftsmanship story.
+- [Collections](https://damsfootwear.ng/collections): Full footwear catalogue with Men's, Women's, and Unisex filters and price/release sorting.
+- [Our Story](https://damsfootwear.ng/about): Family manufacturing heritage in Abuja and our 4-stage shoemaking process.
+- [Contact & Concierge](https://damsfootwear.ng/contact): Direct WhatsApp concierge, Abuja fitting lounge details, and bespoke/sizing enquiry form.
+
+## Signature Footwear Silhouettes
+- **DÁMS Signature Cork Slide** (`/products/dams-signature-natural-cork-slide`): ₦48,000 — Unisex natural cork-latex footbed slide with engraved copper-toned DÁMS buckles and chocolate leather straps.
+- **The Ikoyi Derby** (`/products/ikoyi-hand-welted-derby`): ₦92,000 — Men's full-grain Sokoto calfskin Blake-stitched dress derby.
+- **The Zaria Penny Loafer** (`/products/zaria-penny-loafer`): ₦84,000 — Unisex hand-burnished saddle leather penny loafer with unlined vamp.
+- **The Abeokuta Woven Mule** (`/products/abeokuta-woven-leather-mule`): ₦72,000 — Women's artisanal interlaced nappa leather mule with sculpted block heel.
+- **The Maitama Chelsea** (`/products/maitama-wholecut-chelsea-boot`): ₦110,000 — Unisex wholecut waxed suede storm-welted Chelsea boot.
+- **The Tarkwa Architectural Slide** (`/products/tarkwa-cross-strap-leather-slide`): ₦54,000 — Unisex heavyweight bridle leather cross-strap slide.
+- **The Enugu Sculpted Slingback** (`/products/enugu-sculpted-leather-slingback`): ₦78,000 — Women's pointed square-toe calfskin slingback flat.
+
+## Contact & Ordering Channels
+- **Email**: concierge@damsfootwear.ng
+- **Location**: Abuja (FCT), Nigeria
+- **Checkout Options**: Paystack online checkout (NGN Card, Bank Transfer, USSD) or direct WhatsApp Concierge order formatting.
