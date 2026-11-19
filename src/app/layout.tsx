@@ -66,9 +66,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-white text-[#171C1A] selection:bg-[#013E37] selection:text-[#FFEEB3]">
         <AppProviders>
-          <Suspense
-            fallback={<main className="flex-1 flex flex-col">{children}</main>}
-          >
+          <Suspense fallback={null}>
             <StorefrontShell>{children}</StorefrontShell>
           </Suspense>
         </AppProviders>

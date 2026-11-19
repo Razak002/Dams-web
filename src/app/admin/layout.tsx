@@ -6,7 +6,7 @@ import { Menu, Loader2 } from "lucide-react";
 import { useAuthStore } from "@/store/use-auth-store";
 import { AdminSidebar } from "@/components/admin/AdminSidebar";
 
-export default function AdminLayout({
+function AdminLayoutGuard({
   children,
 }: {
   children: React.ReactNode;
@@ -95,5 +95,26 @@ export default function AdminLayout({
         </main>
       </div>
     </div>
+  );
+}
+
+export default function AdminLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <React.Suspense
+      fallback={
+        <div className="min-h-screen bg-[#FAF9F6] flex flex-col items-center justify-center gap-3 text-[#013E37]">
+          <Loader2 className="w-8 h-8 animate-spin" />
+          <p className="text-xs font-semibold uppercase tracking-[0.18em]">
+            Loading Workshop Console...
+          </p>
+        </div>
+      }
+    >
+      <AdminLayoutGuard>{children}</AdminLayoutGuard>
+    </React.Suspense>
   );
 }
